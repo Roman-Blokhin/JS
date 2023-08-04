@@ -19,7 +19,16 @@ const minusBtn = document.getElementById('minus')
 function resultt (res) {
     submitBtn.onclick = function () { 
         resultElement.textContent = res 
-        console.log(resultElement.textContent) 
+        console.log(resultElement.textContent)
+
+        // добавляем условие изменения цвета результата
+        if (res < 0) {
+            resultElement.style.color = 'red'
+        } else if (res == 0) {
+            resultElement.style.color = 'black'
+        } else {
+            resultElement.style.color = 'green'
+        }
     }
 }
 
