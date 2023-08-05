@@ -13,9 +13,12 @@ const input2 = document.getElementById('input2') // второе число
 const submitBtn = document.getElementById('Submit') // кнопка: Выполнить
 const plusBtn = document.getElementById('plus')
 const minusBtn = document.getElementById('minus')
+const multiplicationBtn = document.getElementById('multiplication')
+const divisionBtn = document.getElementById('division')
+
 
 /* создаем функцию, чтобы использовать повторяющися код в разных функциях
-присваиваем значение - res, чтобы функция работала корректно */
+присваиваем значение - res, чтобы функция работала корректно - Вычислить */
 function resultt (res) {
     submitBtn.onclick = function () { 
         resultElement.textContent = res 
@@ -44,5 +47,17 @@ plusBtn.onclick = function () {
 minusBtn.onclick = function () {
     const min = Number(input1.value) - Number(input2.value)
     resultt (min)
+    }
+
+// функция умножения
+multiplicationBtn.onclick = function () {
+    const multi = Number(input1.value) * Number(input2.value)
+    resultt (multi)
+    }
+
+// функция деления
+divisionBtn.onclick = function () {
+    const divi = Number(input1.value) / Number(input2.value)
+    resultt (divi)
     }
 
