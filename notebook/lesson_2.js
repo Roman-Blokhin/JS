@@ -10,5 +10,20 @@ array[0] = 'becon' // заменили первый элемент в масси
 console.log (array)
 */
 
+const array = []
+const input = document.getElementById ('title')
+const createBtn = document.getElementById ('create')
+const listElement = document.getElementById ('list')
+
+console.log (array)
+
+// добавляем данные из поля ввода в наш массив
+createBtn.onclick = function () {
+    const ad = input.value
+    array.push (ad)
+    console.log (array)
+}
 
 
+    
+     
