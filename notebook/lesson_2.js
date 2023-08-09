@@ -19,11 +19,21 @@ console.log (array)
 
 // добавляем данные из поля ввода в наш массив
 createBtn.onclick = function () {
-    const ad = input.value
-    array.push (ad)
+    const addArray = input.value
+    array.push (addArray) // добавить в массив
     console.log (array)
 }
 
+listElement.insertAdjacentElement ('beforeend', 
+`
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+    <span>${listElement.input}</span>
+    <span>
+        <span class="btn btn-small btn-success">&check;</span>
+        <span class="btn btn-small btn-danger">&times;</span>
+    </span>
+    </li>
+`) 
 
     
      
