@@ -17,23 +17,25 @@ const listElement = document.getElementById ('list')
 
 console.log (array)
 
-// добавляем данные из поля ввода в наш массив
+
 createBtn.onclick = function () {
     const addArray = input.value
-    array.push (addArray) // добавить в массив
+    array.push (addArray) // добавляем данные из поля ввода в наш массив
     console.log (array)
-}
 
-listElement.insertAdjacentElement ('beforeend', 
-`
+    // добавляет значение в список на экране
+    listElement.insertAdjacentHTML ('beforeend', `
     <li class="list-group-item d-flex justify-content-between align-items-center">
-    <span>${listElement.input}</span>
+    <span>${input.value}</span>
     <span>
         <span class="btn btn-small btn-success">&check;</span>
         <span class="btn btn-small btn-danger">&times;</span>
     </span>
     </li>
-`) 
+    `) 
+}
+
+
 
     
      
