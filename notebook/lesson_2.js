@@ -19,9 +19,13 @@ console.log (array)
 
 
 createBtn.onclick = function () {
-    const addArray = input.value
-    array.push (addArray) // добавляем данные из поля ввода в наш массив
-    console.log (array)
+    if (input.value === "") {
+        return // если значение пустое, не добавляем ни в массив, ни в список
+    } else {
+        const addArray = input.value
+        array.push (addArray) // добавляем данные из поля ввода в наш массив
+        console.log (array)
+    }
 
     // добавляет значение в список на экране
     listElement.insertAdjacentHTML ('beforeend', `
