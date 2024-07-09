@@ -11,6 +11,9 @@ let age = 34,
 	surname = 'Lost';
 
 age = 17; // можно менять значение переменной
-const PI = 3.1415;
+const PI = 3.1415567;
 
 console.log(name, surname, age, PI) 
+
+// 3. можно узнать тип данных
+console.log(typeof age, typeof name)
