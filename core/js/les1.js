@@ -19,10 +19,15 @@ console.log(name, surname, ages, PI)
 console.log(typeof ages, typeof name)
 
 // 4. скрипты, которые работают только в браузере
-// 4.1 модальное окно - закоментировал, так как может быть только одно всплывающее окно
+// 4.1 модальное окно - закомментировал, так как может быть только одно всплывающее окно
 
 // alert('Hello my friend/ Do you want to go for a walk?')  
 
-// 4.2 Окно, спрашивающее возраст
-let age = prompt('How old are you?', 18);
-console.log(age)
+// 4.2 Окно, спрашивающее возраст - закоментировал, так как может быть только одно всплывающее окно
+
+// let age = prompt('How old are you?', 18);
+// console.log(age)
+
+// 4.3 окно просит подтвердить или отказать
+let isCar = confirm('Do you have a car?')
+console.log(isCar)
